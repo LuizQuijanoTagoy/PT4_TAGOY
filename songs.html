@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: black;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: blue;
+ color: blue; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: blue; 
+ color: blue;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_TAGOY</title>
+  </head>
+   <body> 
+<font color=blue face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+		   <li align=center><a style="font-weight:bold" href=myself.html>MYSELF</a></li>
+		   <li align=center><a style="font-weight:bold" href=inst.html>FAVORITE GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=sport.html>FAVORITE SHOWS</a></li>
+           <li align=center><a style="font-weight:bold" href=job.html>FAVORITE PAINTINGS</a></li>   		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Mitski </h2>
+<h1> Mitski Miyawaki is a Japanese-American singer-songwriter. Mitski self-released her first two albums, Lush and Retired from Sad, New Career in Business, while studying at Purchase College's Conservatory of Music.  </h1>
+</div>
+<div align="center" class="content-2">
+<h2> Nirvana </h2>
+<h1> Nirvana was an American rock band formed in Aberdeen, Washington, in 1987. Founded by lead singer and guitarist Kurt Cobain and bassist Krist Novoselic, the band went through a succession of drummers, most notably Chad Channing, before recruiting Dave Grohl in 1990. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> The Hives </h2>
+<h1> The Hives are a Swedish rock band that rose to prominence in the early 2000s during the garage rock revival. Their mainstream success came with the release of the album Veni Vidi Vicious, containing the single "Hate to Say I Told You So". The band has been acclaimed by music critics as one of the best live rock bands. </h1>
+</div>
+<div align="center" class="footer">
+<h2> BROCKHAMPTON </h2>
+<h1> Brockhampton, stylized in all caps, was an American hip hop boy band founded in 2010 as AliveSinceForever in San Marcos, Texas. Led by Kevin Abstract and formed partially through online music discussion forum KanyeToThe, Brockhampton was a self-described boy band, so-called in an effort to redefine the term. </h1>
+</div>
+</div>
+</body> 
+</html>

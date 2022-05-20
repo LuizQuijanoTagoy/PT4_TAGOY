@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: black;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: blue;
+ color: blue; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: blue; 
+ color: blue;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_TAGOY</title>
+  </head>
+   <body> 
+<font color=blue face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+		   <li align=center><a style="font-weight:bold" href=myself.html>MYSELF</a></li>
+		   <li align=center><a style="font-weight:bold" href=songs.html>FAVORITE MUSICAL ARTISTS</a></li>
+		   <li align=center><a style="font-weight:bold" href=inst.html>FAVORITE GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=job.html>FAVORITE PAINTINGS</a></li>   		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Community </h2>
+<h1> When fast-talking lawyer Jeff Winger (Joel McHale) finds his degree has been revoked, he is forced to go back to school at Greendale Community College. Hoping to score points with a pretty coed, he invents a study group and invites her to join it. Imagine his surprise when she's not the only one who shows up for help with Spanish from the "board-certified tutor" he proclaims himself to be. Though his command of the language is anything but good, the members continue to meet and end up learning a lot about themselves. </h1>
+</div>
+<div align="center" class="content-2">
+<h2> South Park </h2>
+<h1> The animated series is not for children. In fact, its goal seems to be to offend as many as possible as it presents the adventures of Stan, Kyle, Kenny and Cartman. The show has taken on Saddam Hussein, Osama bin Laden, politicians of every stripe and self-important celebrities. Oh, and Kenny is killed in many episodes. </h1>
+</div>
+<div align="center" class="content-3">
+<h2> Stranger Things </h2>
+<h1> In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. </h1>
+</div>
+<div align="center" class="footer">
+<h2> Black Mirror </h2>
+<h1> A series of stand-alone dramas -- sharp, suspenseful, satirical tales that explore techno-paranoia -- "Black Mirror" is a contemporary reworking of "The Twilight Zone" with stories that tap into the collective unease about the modern world, particularly regarding both intended and unintended consequences of new technologies and the effect they have on society and individuals. Each story features its own cast of unique characters, including stars like Bryce Dallas Howard ("The Help"), Alice Eve, Gugu Mbatha-Raw, Tom Cullen and Jerome Flynn ("Game of Thrones"). Joe Wright, Dan Trachtenberg, and James Watkins are among the featured directors. </h1>
+</div>
+</div>
+</body> 
+</html>
